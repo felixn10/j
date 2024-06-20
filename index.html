@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+img:hover{
+transform: scale(1.9);
+}
+
+            text-align: center;
+        }
+        header, footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: left;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+<body background="f1.jpeg">
+</body> 
+
+
+    <!-- Encabezado -->
+    <header>
+        <div>
+            <img src="2.png" width="200" height="200">
+            <h1>¡Bienvenido a AGUILAR!</h1>
+            <p>La calidad nunca pasa de moda.</p>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="aguilar.html">Accesorios</a></li>
+            <li><a href="nosotros.html">Más de nosotros</a></li>
+
+        </ul>
+        </nav>
+    </header>
+    <!-- Contenido del sitio web -->
+
+    <section id="content">
+        <h2>Elige tu vestido perfecto</h2>
+        <div class="product">
+            <img src="vf.jpeg"  width="300" height="300">
+            <h3>Vestido Floral</h3>
+            <p>Vestido Azul con flores blancas.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="vn.jpeg"  width="300" height="300">
+            <h3>Vestido de Noche</h3>
+            <p>Vestido rosa con abertura en la pierna.</p>
+                <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="v1.jpeg"  width="300" height="300">
+            <h3>Vestido tul verde</h3>
+            <p>Vestido largo color verde.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+           <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+ <div class="product">
+            <img src="v2.jpeg"  width="300" height="300">
+            <h3>Vestido con estampado divertido</h3>
+            <p>Vestido blanco con estampado de colores </p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v3.jpeg"  width="300" height="300">
+            <h3>Vestido de mezclilla </h3>
+            <p>Vestido de mezclilla con bolsillos.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+           <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+ <div class="product">
+            <img src="v4.jpeg"  width="300" height="300">
+            <h3>Vestido con corset</h3>
+            <p>Vestido blanco con detalles en negro.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+ <div class="product">
+            <img src="v5.jpeg"  width="300" height="300">
+            <h3>Vestido verde militar</h3>
+            <p>Vestido para el diario.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v6.jpeg"  width="300" height="300">
+            <h3>Vestido de mezclilla con escote cuadrado</h3>
+            <p>mezclilla suave.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v7.jpeg"  width="300" height="300">
+            <h3>Vestido rosa pastel, corto</h3>
+            <p>Vestido color pastel con bolsillos prácticos.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v8.jpeg"  width="300" height="300">
+            <h3>Vestido casual</h3>
+            <p>Vestido con estampado de cuadros.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v9.jpeg"  width="300" height="300">
+            <h3>Vestido fresco para el verano</h3>
+            <p>Vestido tela delgada sin transparencia .</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+ <div class="product">
+            <img src="v10.jpeg"  width="300" height="300">
+            <h3>Vestido negro corto</h3>
+            <p>Vestido corto con escote cuadrado.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+           <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v11.jpeg"  width="300" height="300">
+            <h3>Vestido azul, corto, para fiesta</h3>
+            <p>Vestido para un desayuno casual.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v12.jpeg"  width="300" height="300">
+            <h3>Vestido café con manga larga</h3>
+            <p>Vestido con mangas holgadas y largas.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v13.jpeg"  width="300" height="300">
+            <h3>Vestido floral</h3>
+            <p>Vestido con estampado de flores azules.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v14.jpeg"  width="300" height="300">
+            <h3>Vestido elegante </h3>
+            <p>Vestido para cualquier reunion formal.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+           <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v15.jpeg"  width="300" height="300">
+            <h3>Vestido colorido</h3>
+            <p>Vestido de color llamativo.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v16.jpeg"  width="300" height="300">
+            <h3>Vestido floral </h3>
+            <p>Vestido azul con flores blancas, largo.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v17.jpeg"  width="300" height="300">
+            <h3>Vestido estilo OLD MONEY</h3>
+            <p>Vestido blanco con negro elegante .</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v18.jpeg"  width="300" height="300">
+            <h3>Vestido tipo princesa</h3>
+            <p>Vestido color melon con manga tipo princesa.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v19.jpeg"  width="300" height="300">
+            <h3>Vestido para picnic</h3>
+            <p>Vestido con estampado de cerezas ideal para picnic.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v20.jpeg"  width="300" height="300">
+            <h3>Vestido para graduacion</h3>
+            <p>Vestido con aberura en la pierna ideal para graduacion.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+<div class="product">
+            <img src="v21.jpeg"  width="300" height="300">
+            <h3>Vestido de seda "</h3>
+            <p>Vestido de seda blanca muy suave.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v22.jpeg"  width="300" height="300">
+            <h3>Vestido para boda</h3>
+            <p>Vestido color vino con tirantes delgados.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v23.jpeg"  width="300" height="300">
+            <h3>Vestido modesto</h3>
+            <p>Vestido color celeste, largo.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v24.jpeg"  width="300" height="300">
+            <h3>Vestido para adolecente</h3>
+            <p>Vestido rojo, corto, para adolecente.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v25.jpeg"  width="300" height="300">
+            <h3>Vestido estilo OLD MONEY</h3>
+            <p>Vestido elegante para cualquier ocasión.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v26.jpeg"  width="300" height="300">
+            <h3>Vestido ampón</h3>
+            <p>Vestido de tul azul con mucho volumen.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v27.jpeg"  width="300" height="300">
+            <h3>Vestido con blusa incluida</h3>
+            <p>Vestido de mezclilla con blusa rosa.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v28.jpeg"  width="300" height="300">
+            <h3>Vestido con espalda abierta</h3>
+            <p>Vestido con escote pronunciado en la espalda.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v29.jpeg"  width="300" height="300">
+            <h3>Vestido con escote tipo "M"</h3>
+            <p>Vestido corto con escote en forma de "m".</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v30.jpeg"  width="300" height="300">
+            <h3>Vestido con abertura en la pierna</h3>
+            <p>Vestido rojo floreado con abertura en la pierna.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v31.jpeg"  width="300" height="300">
+            <h3>Vestido sofisticado</h3>
+            <p>Vestido juvenil elegante y sencillo.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v32.jpeg"  width="300" height="300">
+            <h3>Vestido veraniego</h3>
+            <p>Vestido café con puntos blancos para vacacionar.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v33.jpeg"  width="300" height="300">
+            <h3>Vestido flores blancas</h3>
+            <p>Vestido con estampado divertido.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v34.jpeg"  width="300" height="300">
+            <h3>Vestido divertido</h3>
+            <p>Vestido con volumen y flores bordadas a mano.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v35.jpeg"  width="300" height="300">
+            <h3>Vestido para fiesta elegante</h3>
+            <p>Vestido azul marino detallado con brillos.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v36.jpeg"  width="300" height="300">
+            <h3>Vestido casual</h3>
+            <p>Vestido para el diario, comodo y suave.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v37.jpeg"  width="300" height="300">
+            <h3>Vestido sensual</h3>
+            <p>Vestido con espalda descubierta.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v38.jpeg"  width="300" height="300">
+            <h3>Vestido con tulipanes</h3>
+            <p>Vestido con estampado de tulipanes rosas.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v39.jpeg"  width="300" height="300">
+            <h3>Vestido para cena elegante </h3>
+            <p>Vestido de seda color hueso.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v40.jpeg"  width="300" height="300">
+            <h3>Vestido para adolecente</h3>
+            <p>Vestido blanco con escote cuadrado .</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v41.jpeg"  width="300" height="300">
+            <h3>Vestido sin mangas</h3>
+            <p>Vestido color amarillo sin mangas y abertura en la pierna.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v42.jpeg"  width="300" height="300">
+            <h3>Vestido para evento</h3>
+            <p>Vestido azul suave para cualquier evento.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v43.jpeg"  width="300" height="300">
+            <h3>Vestido bordado</h3>
+            <p>Vestido con tirantes cortos con cerezas bordadas a mano.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v44.jpeg"  width="300" height="300">
+            <h3>Vestido sensual</h3>
+            <p>Vestido fresco y sensual color negro con bordes blancos.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v45.jpeg"  width="300" height="300">
+            <h3>Vestido "vino"</h3>
+            <p>Vestido color rojo vino.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v46.jpeg"  width="300" height="300">
+            <h3>Vestido casual</h3>
+            <p>Vestido café con mangas amplias.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v47.jpeg"  width="300" height="300">
+            <h3>Vestido rosa "MÉXICANO"</h3>
+            <p>Vestido elegate color rosa mexicano.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v48.jpeg"  width="300" height="300">
+            <h3>Vestido liso</h3>
+            <p>Vestido blanco liso.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v49.jpeg"  width="300" height="300">
+            <h3>Vestido mangas tipo princesa</h3>
+            <p>Vestido con mangas amplias y escote cuadrado.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+<div class="product">
+            <img src="v50.jpeg"  width="300" height="300">
+            <h3>Vestido colorido</h3>
+            <p>Vestido con estampado de flores de colores.</p>
+             <p>TALLAS:(CH)(G)(M)(EXG)(ECH).</p>
+            <button class="comprar-btn" onclick="comprar()">Comprar</button>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Más productos aquí -->
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div>
+            <h3>Contáctanos</h3>
+            <p>¡Estamos aquí para ayudarte! Contáctanos para cualquier consulta.</p>
+        </div>
+        <div>
+            <h3>Encuéntranos</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.0122908946576!2d-122.40745188466674!3d37.78707777975763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580b083f7d733%3A0x5d2d3404cf3e828f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1630616099836!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </footer>
+    
+    <script>
+        function comprar() {
+            var tarjeta = prompt("Por favor, ingresa el número de tu tarjeta:");
+            var telefono = prompt("Por favor, ingresa tu número de teléfono:");
+            // Aquí podrías enviar la información a un servidor para procesar la compra
+            alert("¡Compra realizada con éxito!");
+        }
+    </script>
+
+
+    <!-- Script para realizar compra -->
+    <script>
+        function realizarCompra() {
+            var modal = document.getElementById("modalCompra");
+            modal.style.display = "block";
+        }
+
+        function cerrarModal() {
+            var modal = document.getElementById("modalCompra");
+            modal.style.display = "none";
+        }
+
+        // Simulación de compra exitosa
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById("mensajeCompra").innerHTML = "Compra exitosa. ¡Gracias por tu compra!";
+        });
+    </script>
+<section id="Contacto">
+<h2>f0rmufano</h2>
+<p>¡Contáctanos para más información!</p>
+<form
+action="sandra.jocelin28@gmail.com" method="POST">
+<label
+for="nombre">Nombre:</label>
+<input type="text"
+id="nombre" name="nombre"
+class="input-field"
+required><br><br>
+<label for="email">Correo
+Electrónico:</label>
+<input type="email"
+id="email" name="email"
+class="input-field"
+required><br><br>
+<label
+for="mensaje">Mensaje:</ label><br>
+< textarea id="mensaje"
+name="mensaje" class="input-field" required></
+textarea><br><br>
+<button type="submit"
+class="btn">Enviar Mensaje</ button>
+</form>
+</section>
+</body>
